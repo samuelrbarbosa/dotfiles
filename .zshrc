@@ -106,7 +106,7 @@ alias ied="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/ied.md"
 
 
 alias fd="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd"
-alias aulas="cd ~/Google\Drive\ File\ Stream/Meu\ Drive/_fd/aulas"
+alias ied="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/ied_2020i/"
 alias pdf="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_pdf"
 alias dropbox="cd ~/Dropbox"
 alias proj="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_projetos"
@@ -132,3 +132,4 @@ alias gdrive= "cd ~/Google\ Drive\ File\ Stream/"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 bindkey -v
 alias config='/usr/bin/git --git-dir=/Users/samuelrbarbosa/dotfiles/ --work-tree=/Users/samuelrbarbosa'
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
