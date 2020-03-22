@@ -120,7 +120,6 @@ alias latex="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_latex"
 alias mpi="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/mpi19"
 alias sf=surfraw
 alias bujo="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/bujo20.md"
-alias biblio="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/bibliografia"
 alias accomodados="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_projetos/habilitation/projeto_accomodados.md"
 alias template='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_latex; vim template'
 alias note='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas; vim'
