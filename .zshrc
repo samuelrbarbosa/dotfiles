@@ -124,6 +124,7 @@ alias accomodados="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_projetos/habili
 alias template='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_latex; vim template'
 alias note='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas; vim'
 alias gdrive= "cd ~/Google\ Drive\ File\ Stream/"
+alias cv="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/cv.md"
 
 
 
