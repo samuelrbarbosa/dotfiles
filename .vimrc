@@ -82,12 +82,8 @@ set novisualbell
 
 
 :imap jj <Esc>
-:imap <C-d> jjS<Del> 
-
-
 vmap <C-x> : !pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
-
 :nmap <C-i> :! pandoc % --pdf-engine=xelatex -o %:r.pdf<Enter>
 :nmap <C-m> :! pandoc % -t beamer -o %:r.pdf<Enter>
 :nmap <C-o> :! open %:r.pdf<Enter>
@@ -96,7 +92,6 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap NV :NV
 :nmap -- :Goyo <CR> 
 :nmap ,, G$
-
 :nmap <C-Up> ddkP
 :nmap <C-Down> ddp
 :nmap <C-Left> zc
