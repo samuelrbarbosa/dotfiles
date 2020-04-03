@@ -82,8 +82,6 @@ set novisualbell
 
 
 :imap jj <Esc>
-:imap <C-d> jjS<Del> 
-
 
 vmap <C-x> : !pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
