@@ -82,10 +82,7 @@ set novisualbell
 
 
 :imap jj <Esc>
-<<<<<<< HEAD
-=======
 
->>>>>>> 6eef36390dce52eb631ff073602382d61a8966b3
 vmap <C-x> : !pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-i> :! pandoc % --pdf-engine=xelatex -o %:r.pdf<Enter>
