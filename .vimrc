@@ -1,5 +1,6 @@
 set nocompatible
 set encoding=utf-8
+filetype plugin on
 
 
 
@@ -26,10 +27,12 @@ Plug 'tpope/vim-ragtag'
 Plug 'https://github.com/alok/notational-fzf-vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
 
-
+let g:livepreview_previewer = 'open -a Skim'
 
 let g:pandoc#spell#enabled = 0
 "let g:pandoc#modules#disabled = ["folding"]
@@ -43,12 +46,26 @@ augroup pencil
  " autocmd FileType text         call pencil#init({'wrap': 'hard'})
 augroup END
 
+autocmd BufWinLeave *.* mkview 
+autocmd BufWinEnter *.* silent loadview  
 
 
 let g:ctrlp_map = '<c-p>'
-let g:nv_search_paths = ['~/Dropbox/_notas']
+let g:nv_search_paths = ['~/Google\ Drive\ File \Stream/Meu\ Drive/_notas']
 let g:nv_use_short_pathnames = 1
 let g:loaded_matchparen=1
+
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+   autocmd FileType tex,tex call pencil#init()
+
+  " autocmd FileType text         call pencil#init({'wrap': 'hard'})
+augroup END
+
+
 
 set nobackup
 set nowb
@@ -88,7 +105,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-i> :! pandoc % --pdf-engine=xelatex -o %:r.pdf<Enter>
 :nmap <C-m> :! pandoc % -t beamer -o %:r.pdf<Enter>
 :nmap <C-o> :! open %:r.pdf<Enter>
-:nmap <C-l> :! pdflatex % %:r.pdf<Enter> 
+:nmap <C-l> : !pdflatex % %:r.pdf<Enter> 
 :nmap <C-b> :! bibtex %:r<Enter>
 :nmap NV :NV
 :nmap -- :Goyo <CR> 
@@ -97,6 +114,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Down> ddp
 :nmap <C-Left> zc
 :nmap <C-Right> zo
+
 
 inoremap ( ()<left>
 inoremap [ []<left>
