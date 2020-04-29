@@ -130,6 +130,8 @@ alias cv="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/cv.md"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-bindkey -v
 alias config='/usr/bin/git --git-dir=/Users/samuelrbarbosa/dotfiles/ --work-tree=/Users/samuelrbarbosa'
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
+#bindkey -v
+
