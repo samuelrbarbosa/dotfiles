@@ -27,7 +27,7 @@ Plug 'tpope/vim-ragtag'
 Plug 'https://github.com/alok/notational-fzf-vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
@@ -119,3 +119,6 @@ vmap <C-c> :w !pbcopy<CR><CR>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+
+let g:netrw_banner = 0
+let g:netrw_winsize = 75
