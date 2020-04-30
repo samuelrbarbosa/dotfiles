@@ -29,6 +29,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
@@ -115,6 +116,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Left> zc
 :nmap <C-Right> zo
 
+nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 
 nnoremap 'b :Buffers<cr>
 nnoremap '' :b#<cr>
@@ -127,3 +129,5 @@ inoremap { {}<left>
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
+
+set rtp+=/usr/local/opt/fzf
