@@ -97,7 +97,7 @@ set whichwrap+=<,>,h,l,[,]
 
 set noerrorbells
 set novisualbell
-
+set hidden
 
 :imap jj <Esc>
 
@@ -116,6 +116,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Left> zc
 :nmap <C-Right> zo
 
+nmap <silent> ,n :nohls<CR>
 nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 
 nnoremap 'b :Buffers<cr>
