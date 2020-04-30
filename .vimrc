@@ -29,6 +29,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
@@ -122,3 +123,5 @@ inoremap { {}<left>
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
+
+set rtp+=/usr/local/opt/fzf
