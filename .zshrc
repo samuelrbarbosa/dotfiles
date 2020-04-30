@@ -102,6 +102,7 @@ alias td="~/Google\ Drive\ File\ Stream/Meu\ Drive/todo/todo.sh"
 alias notas="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas"
 alias ldnotas="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/ld_notas"
 alias ied="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas/ied.md"
+alias tv2="tv2 ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas"
 
 
 
@@ -125,6 +126,7 @@ alias template='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_latex; vim template
 alias note='cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas; vim'
 alias gdrive= "cd ~/Google\ Drive\ File\ Stream/"
 alias cv="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/cv.md"
+
 
 
 
