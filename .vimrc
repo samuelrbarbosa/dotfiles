@@ -116,6 +116,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Left> zc
 :nmap <C-Right> zo
 
+nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 
 inoremap ( ()<left>
 inoremap [ []<left>
