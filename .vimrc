@@ -107,7 +107,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-o> :! open %:r.pdf<Enter>
 :nmap <C-l> : !pdflatex % %:r.pdf<Enter> 
 :nmap <C-b> :! bibtex %:r<Enter>
-:nmap NV :NV
+:nmap NV :NV <CR>
 :nmap -- :Goyo <CR> 
 :nmap ,, G$
 :nmap <C-Up> ddkP
@@ -115,6 +115,11 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Left> zc
 :nmap <C-Right> zo
 
+
+nnoremap 'b :Buffers<cr>
+nnoremap '' :b#<cr>
+nnoremap 'z :e ~/.zshrc<cr>
+nnoremap 'v :e ~/.vimrc<cr>
 
 inoremap ( ()<left>
 inoremap [ []<left>
