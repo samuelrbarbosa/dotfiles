@@ -160,6 +160,8 @@ command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 nnoremap ,f :Files<cr>
 
+command! -nargs=1 Zettel :execute ":e" . strftime("%Y%m%d%H%M") . "-<args>.md"
+nnoremap <leader>nn :Zettel 
 
 
 
