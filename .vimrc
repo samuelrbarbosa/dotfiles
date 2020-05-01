@@ -124,10 +124,12 @@ nnoremap 'b :Buffers<cr>
 nnoremap '' :b#<cr>
 nnoremap 'z :e ~/.zshrc<cr>
 nnoremap 'v :e ~/.vimrc<cr>
+nnoremap ,f :NV<cr>
 
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
@@ -137,5 +139,10 @@ set rtp+=/usr/local/opt/fzf
 let g:zettelkasten = "/users/samuelrbarbosa/zk/"
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%M") . "-<args>.md"
 nnoremap <leader>nz :NewZettel
+
+
+imap <c-x><c-f> <plug>(fzf-complete-path)
+
+
 
 
