@@ -162,7 +162,7 @@ command! -bang -nargs=? -complete=dir Files
 nnoremap ,f :Files<cr>
 nnoremap ,r :RG<cr>
 
-command! -nargs=1 Zettel :execute ":e" . strftime("%Y%m%d%H%M") . "-<args>.md"
+command! -nargs=1 Zettel :execute ":e" . strftime("%y%m%d%H%M") . "-<args>.md"
 nnoremap <leader>nn :Zettel 
 
 
