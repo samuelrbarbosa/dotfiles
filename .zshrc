@@ -128,7 +128,7 @@ alias gdrive= "cd ~/Google\ Drive\ File\ Stream/"
 alias cv="vim ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/cv.md"
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
-
+alias dt="date +%y%m%d%H%M"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
