@@ -109,6 +109,9 @@ set noerrorbells
 set novisualbell
 set hidden
 
+map <F6> :setlocal spell! spelllang=pt<CR>
+map <F5> :set spelllang=en_us<CR>
+
 :imap jj <Esc>
 
 vmap <C-x> : !pbcopy<CR>
