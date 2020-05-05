@@ -139,6 +139,5 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export NOTES_DIR=$HOME/zk
 
 
-
 #bindkey -v
 
