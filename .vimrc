@@ -131,7 +131,8 @@ vmap <C-c> :w !pbcopy<CR><CR>
 
 nmap <silent> ,n :nohls<CR>
 nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
-nnoremap <leader>ni :e $NOTES_DIR/index.md<CR>:cd $NOTES_DIR<CR>
+nnoremap ,be :-1read $HOME/.vim/.beamer.md<cr>
+
 
 nnoremap ,b :Buffers<cr>
 nnoremap ,, :b#<cr>
