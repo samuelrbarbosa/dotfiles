@@ -138,6 +138,9 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 export NOTES_DIR=$HOME/zk
 
+export PATH="HOME/.cabal/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
 
 #bindkey -v
 
