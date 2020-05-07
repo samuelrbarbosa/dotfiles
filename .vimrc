@@ -164,7 +164,7 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 nnoremap ,f :Files<cr>
-nnoremap ,r :RG<cr>
+nnoremap ,ff :RG<cr>
 
 command! -nargs=1 Zettel :execute ":e" . strftime("%y%m%d%H%M") . "-<args>.md"
 nnoremap <leader>nn :Zettel 
