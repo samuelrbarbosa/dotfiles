@@ -82,8 +82,8 @@ set nowb
 set noswapfile
 
 set autoindent
-"set number relativenumber
-set number
+set number relativenumber
+"set number
 set ruler "1,1 cursor
 set hlsearch
 set incsearch
