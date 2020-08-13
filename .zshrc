@@ -107,7 +107,7 @@ alias tv2="tv2 ~/Google\ Drive\ File\ Stream/Meu\ Drive/_notas"
 
 
 alias fd="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd"
-alias ied="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/ied_2020i/"
+alias ied="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_fd/ied2020ii/"
 alias pdf="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_pdf"
 alias dropbox="cd ~/Dropbox"
 alias proj="cd ~/Google\ Drive\ File\ Stream/Meu\ Drive/_projetos"
