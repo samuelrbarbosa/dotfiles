@@ -1,7 +1,7 @@
 {
   "journals": {
-    "default": "~/Google Drive File Stream/Meu Drive/_notas/journal.txt",
-    "leituras": "~/Google Drive File Stream/Meu Drive/_notas/leituras.txt"
+    "default": "~/Google Drive/Meu Drive/_notas/journal.txt",
+    "leituras": "~/Google Drive/Meu Drive/_notas/leituras.txt"
   },
   "editor": "",
   "encrypt": false,
