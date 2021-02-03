@@ -55,7 +55,7 @@ let g:ctrlp_map = '<c-p>'
 
 
 
-let g:nv_search_paths = ['~/Google\ Drive\ File \Stream/Meu\ Drive/_notas']
+let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas']
 let g:nv_default_extension = '.md'
 let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 75
