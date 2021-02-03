@@ -155,7 +155,7 @@ let g:netrw_winsize = 75
 
 set rtp+=/usr/local/opt/fzf
 
-let g:zettelkasten = '~/Google\ Drive\ File \Stream/Meu\ Drive/_notas/'
+let g:zettelkasten = '~/Google\ Drive/Meu\ Drive/_notas/'
 
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") . "-<args>.md"
 nnoremap <leader>nz :NewZettel 
