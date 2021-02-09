@@ -33,9 +33,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'KevinBockelandt/notoire'
 call plug#end()
 
-
-let g:livepreview_previewer = 'open -a Skim'
-
 let g:pandoc#spell#enabled = 0
 "let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#folding#fdc = 0
@@ -60,6 +57,7 @@ let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas']
 let g:nv_default_extension = '.md'
 let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 75
+let g:nv_wrap_preview_text = 1
 
 let g:notoire_folders = ['~/Google\ Drive/Meu\ Drive/_notas/teste/']
 
