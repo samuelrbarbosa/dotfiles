@@ -30,6 +30,7 @@ Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
+Plug 'KevinBockelandt/notoire'
 call plug#end()
 
 
@@ -60,6 +61,7 @@ let g:nv_default_extension = '.md'
 let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 75
 
+let g:notoire_folders = ['~/Google\ Drive/Meu\ Drive/_notas/teste/']
 
 
 
