@@ -30,7 +30,6 @@ Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
-Plug 'KevinBockelandt/notoire'
 call plug#end()
 
 let g:pandoc#spell#enabled = 0
@@ -59,7 +58,6 @@ let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 75
 let g:nv_wrap_preview_text = 1
 
-let g:notoire_folders = ['~/Google\ Drive/Meu\ Drive/_notas/teste/']
 
 
 
@@ -163,7 +161,9 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 
 
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+
+
 nnoremap ,f :Files<cr>
 nnoremap ,ff :RG<cr>
 
