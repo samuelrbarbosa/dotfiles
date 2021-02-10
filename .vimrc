@@ -54,7 +54,7 @@ let g:pandoc#folding#fdc = 0
 
 
 let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/zk/',
-                      \ 'ext': '.md'}]
+                      \ 'ext': '.txt'}]
 
 
 
