@@ -32,9 +32,7 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
 call plug#end()
 
-let g:pandoc#spell#enabled = 0
-"let g:pandoc#modules#disabled = ["folding"]
-let g:pandoc#folding#fdc = 0
+
 
 
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
@@ -49,6 +47,15 @@ autocmd BufWinEnter *.* silent loadview
 
 
 let g:ctrlp_map = '<c-p>'
+
+
+let g:pandoc#spell#enabled = 0
+let g:pandoc#folding#fdc = 0
+
+
+let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/zk/',
+                      \ 'ext': '.md'}]
+
 
 
 
@@ -147,8 +154,6 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
-let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/',
-                      \ 'ext': '.md'}]
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
