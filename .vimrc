@@ -147,6 +147,8 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
+let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/',
+                      \ 'ext': '.md'}]
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
