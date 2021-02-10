@@ -1,6 +1,8 @@
 set nocompatible
 set encoding=utf-8
 filetype plugin on
+syntax on
+
 
 let mapleader=","
 
@@ -46,15 +48,22 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview  
 
 
+
+
+
 let g:ctrlp_map = '<c-p>'
 
+let g:markdown_folding = 1
+let g:vimwiki_global_ext = 0
+let g:vimwiki_ext2syntax = {}
 
 let g:pandoc#spell#enabled = 0
+
 let g:pandoc#folding#fdc = 0
 
 
 let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/zk/',
-                      \ 'ext': '.txt'}]
+                      \ 'syntax': 'default', 'ext': '.txt'}]
 
 
 
