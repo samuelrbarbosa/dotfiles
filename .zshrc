@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias t="~/Dropbox/todo/todo.sh"
 alias td="~/Google\ Drive/Meu\ Drive/todo/todo.sh"
 alias notas="cd ~/Google\ Drive/Meu\ Drive/_notas"
+alias zk="cd ~/Google\ Drive/Meu\ Drive/_notas/zk/"
 alias ldnotas="cd ~/Google\ Drive/Meu\ Drive/_notas/ld_notas"
 alias ied="vim ~/Google\ Drive/Meu\ Drive/_notas/ied.md"
 alias tv2="tv2 ~/Google\ Drive/Meu\ Drive/_notas"
