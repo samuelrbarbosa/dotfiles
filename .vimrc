@@ -68,11 +68,13 @@ let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/zk/',
 
 
 
-let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas']
-let g:nv_default_extension = '.md'
+let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas', '~/Google\ Drive/Meu\ Drive/_notas/zk/']
+let g:nv_default_extension = ''
 let g:nv_use_short_pathnames = 1
-let g:nv_preview_width = 75
+let g:nv_preview_width = 70
+let g:nv_window_width = '35'
 let g:nv_wrap_preview_text = 1
+
 
 
 
@@ -175,16 +177,29 @@ command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") 
 nnoremap <leader>nz :NewZettel 
 imap <c-x><c-f> <plug>(fzf-complete-path)
 
+command! -nargs=1 Zettel :execute ":e" . strftime("%y%m%d%H%M") . "-<args>.md"
+nnoremap <leader>nn :Zettel 
+
+
+
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+let $FZF_DEFAULT_OPTS="--ansi --preview-window='right:70%:wrap' --margin=1,4"
 
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+    \ call fzf#vim#files(<q-args>, {'options': ['--info=inline', '--preview', 'cat {}']}, <bang>0)
+
+  
+
 
 
 nnoremap ,f :Files<cr>
 nnoremap ,ff :RG<cr>
 
-command! -nargs=1 Zettel :execute ":e" . strftime("%y%m%d%H%M") . "-<args>.md"
-nnoremap <leader>nn :Zettel 
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview('right:70%:wrap'), <bang>0)
 
 
 function! RipgrepFzf(query, fullscreen)
