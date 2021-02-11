@@ -41,7 +41,7 @@ let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
- " autocmd FileType text         call pencil#init({'wrap': 'hard'})
+  autocmd FileType text,txt call pencil#init()
 augroup END
 
 autocmd BufWinLeave *.* mkview 
@@ -144,7 +144,8 @@ vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-Down> ddp
 :nmap <C-Left> zc
 :nmap <C-Right> zo
-
+:nmap <Up> gk
+:nmap <Down> gj
 nmap <silent> ,n :nohls<CR>
 nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 nnoremap ,be :-1read $HOME/.vim/.beamer.md<cr>
@@ -158,6 +159,8 @@ nnoremap ,d :bd<cr>
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
 noremap <leader>q :q<cr>
+
+nnoremap <leader>w <C-w>w
 
 inoremap << <!---->
 
