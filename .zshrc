@@ -142,7 +142,7 @@ export PATH="HOME/.cabal/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export FZF_CTRL_T_OPTS="--preview 'cat {}' --preview-window=wrap"
+export FZF_CTRL_T_OPTS="--preview 'cat {}' --preview-window='right:70%:wrap'"
 
 
 
