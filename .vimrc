@@ -157,6 +157,8 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
+nnoremap <silent> <leader>+ :vertical resize +5<CR>
+nnoremap <silent> <leader>- :vertical resize -5<CR>
 
 let g:netrw_banner = 0
 let g:netrw_winsize = 75
