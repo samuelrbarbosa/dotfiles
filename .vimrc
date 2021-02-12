@@ -117,8 +117,8 @@ augroup pencil
   " autocmd FileType text         call pencil#init({'wrap': 'hard'})
 augroup END
 
-
-
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
 map <F6> :setlocal spell! spelllang=pt<CR>
 map <F5> :set spelllang=en_us<CR>
 :imap jj <Esc>
