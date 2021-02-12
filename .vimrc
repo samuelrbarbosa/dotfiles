@@ -3,13 +3,11 @@ set encoding=utf-8
 filetype plugin on
 syntax on
 
-"set ve=all
 set nobackup
 set nowb
 set noswapfile
 set autoindent
 set number relativenumber
-"set number
 set ruler "1,1 cursor
 set nohlsearch
 set incsearch
@@ -63,9 +61,6 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
-
-"colorscheme gruvbox
-"highlight Normal guibg=none
 
 
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
@@ -209,4 +204,5 @@ endfunction
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 
+" set ve=all
 
