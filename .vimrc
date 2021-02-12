@@ -29,6 +29,7 @@ set noerrorbells
 set novisualbell
 set hidden
 
+
 let mapleader=","
 
 
