@@ -3,8 +3,37 @@ set encoding=utf-8
 filetype plugin on
 syntax on
 
+"set ve=all
+set nobackup
+set nowb
+set noswapfile
+set autoindent
+set number relativenumber
+"set number
+set ruler "1,1 cursor
+set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
+set splitbelow splitright
+set wildmenu
+set wildmode=list:longest
+set scrolloff =8 
+set wrap linebreak nolist 
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
+set mouse=a
+set whichwrap+=<,>,h,l,[,]
+set belloff=all
+set noerrorbells
+set novisualbell
+set hidden
 
 let mapleader=","
+
+
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -32,9 +61,11 @@ Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
+Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
-
+"colorscheme gruvbox
+"highlight Normal guibg=none
 
 
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
@@ -93,43 +124,9 @@ augroup END
 
 
 
-set nobackup
-set nowb
-set noswapfile
-
-set autoindent
-set number relativenumber
-"set number
-set ruler "1,1 cursor
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set splitbelow splitright
-set wildmenu
-set wildmode=list:longest
-set scrolloff =5 
-set wrap linebreak nolist 
-
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set smarttab
-
-set mouse=a
-
-set whichwrap+=<,>,h,l,[,]
-
-set belloff=all
-set noerrorbells
-set novisualbell
-set hidden
-
 map <F6> :setlocal spell! spelllang=pt<CR>
 map <F5> :set spelllang=en_us<CR>
-
 :imap jj <Esc>
-
 vmap <C-x> : !pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-i> :! pandoc % --pdf-engine=xelatex -o %:r.pdf<Enter>
@@ -150,7 +147,6 @@ nmap <silent> ,n :nohls<CR>
 nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 nnoremap ,be :-1read $HOME/.vim/.beamer.md<cr>
 nnoremap ,patat :-1read $HOME/.vim/patat.md<cr>
-
 nnoremap ,b :Buffers<cr>
 nnoremap ,, :b#<cr>
 nnoremap ,z :e ~/.zshrc<cr>
@@ -159,11 +155,8 @@ nnoremap ,d :bd<cr>
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
 noremap <leader>q :q<cr>
-
 nnoremap <leader>w <C-w>w
-
 inoremap << <!---->
-
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
