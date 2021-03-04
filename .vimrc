@@ -61,6 +61,7 @@ Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
 Plug 'gruvbox-community/gruvbox'
+Plug 'https://github.com/alok/notational-fzf-vim'
 call plug#end()
 
 
@@ -95,7 +96,7 @@ let g:pandoc#folding#fdc = 0
 
 
 
-let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas', '~/Google\ Drive/Meu\ Drive/_notas/zk/']
+let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas/zk1/']
 let g:nv_default_extension = ''
 let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 70
