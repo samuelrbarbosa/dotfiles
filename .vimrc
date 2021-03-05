@@ -146,8 +146,6 @@ nnoremap ,be :-1read $HOME/.vim/.beamer.md<cr>
 nnoremap ,patat :-1read $HOME/.vim/patat.md<cr>
 nnoremap ,b :Buffers<cr>
 nnoremap ,, :b#<cr>
-nnoremap ,z :e ~/.zshrc<cr>
-nnoremap ,v :e ~/.vimrc<cr>
 nnoremap ,d :bd<cr>
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
