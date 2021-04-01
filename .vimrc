@@ -54,12 +54,12 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-eunuch'
 Plug 'https://github.com/alok/notational-fzf-vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'vimwiki/vimwiki'
 Plug 'gruvbox-community/gruvbox'
 Plug 'https://github.com/alok/notational-fzf-vim'
 call plug#end()
@@ -82,21 +82,13 @@ autocmd BufWinEnter *.* silent loadview
 let g:ctrlp_map = '<c-p>'
 
 let g:markdown_folding = 1
-"let g:vimwiki_global_ext = 0
-"let g:vimwiki_ext2syntax = {}
 
 let g:pandoc#spell#enabled = 0
 
 let g:pandoc#folding#fdc = 0
 
 
-"let g:vimwiki_list = [{'path': '~/Google\ Drive/Meu\ Drive/_notas/zk/',
-                      \ 'syntax': 'default', 'ext': '.txt'}]
-
-
-
-
-let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas/zk1/']
+let g:nv_search_paths = ['~/Google\ Drive/Meu\ Drive/_notas/zk/']
 let g:nv_default_extension = ''
 let g:nv_use_short_pathnames = 1
 let g:nv_preview_width = 70
