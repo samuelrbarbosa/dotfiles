@@ -143,7 +143,7 @@ nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
 noremap <leader>q :q<cr>
 nnoremap <leader>w <C-w>w
-inoremap << <!---->
+inoremap << <!--
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
