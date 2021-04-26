@@ -148,6 +148,5 @@ export FZF_CTRL_T_OPTS="--preview 'cat {}' --preview-window='right:70%:wrap'"
 
 
 
-
 #bindkey -v
 
