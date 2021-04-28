@@ -110,7 +110,7 @@ alias tv2="tv2 ~/Google\ Drive/Meu\ Drive/_notas"
 
 
 alias fd="cd ~/Google\ Drive/Meu\ Drive/_fd"
-alias ied="cd ~/Google\ Drive/Meu\ Drive/_fd/ied2020ii/"
+alias ied="cd ~/Google\ Drive/Meu\ Drive/_fd/ied2021i/"
 alias pdf="cd ~/Google\ Drive/Meu\ Drive/_pdf"
 alias dropbox="cd ~/Dropbox"
 alias proj="cd ~/Google\ Drive/Meu\ Drive/_projetos"
