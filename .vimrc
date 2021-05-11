@@ -148,11 +148,11 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
-inoremap aa ā
-inoremap ee ē
-inoremap ii ī
-inoremap oo ō
-inoremap uu ū
+inoremap [a ā
+inoremap [e ē
+inoremap [i ī
+inoremap [o ō
+inoremap [u ū
 
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
