@@ -154,6 +154,9 @@ inoremap [i ī
 inoremap [o ō
 inoremap [u ū
 
+
+imap <S-Right> <Esc>v<Right>
+
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
