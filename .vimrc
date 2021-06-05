@@ -154,6 +154,7 @@ inoremap [i ī
 inoremap [o ō
 inoremap [u ū
 
+:noremap <leader>gf :e <cfile>.md<CR>
 
 imap <S-Right> <Esc>v<Right>
 
