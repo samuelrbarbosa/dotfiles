@@ -107,7 +107,7 @@ alias ldnotas="cd ~/Google\ Drive/Meu\ Drive/_notas/ld_notas"
 alias ied="vim ~/Google\ Drive/Meu\ Drive/_notas/ied.md"
 alias tv2="tv2 ~/Google\ Drive/Meu\ Drive/_notas"
 
-
+n() { vim ~/Google\ Drive/Meu\ Drive/_notas/zk/"$*".md } 
 
 alias fd="cd ~/Google\ Drive/Meu\ Drive/_fd"
 alias ied="cd ~/Google\ Drive/Meu\ Drive/_fd/ied2021i/"
