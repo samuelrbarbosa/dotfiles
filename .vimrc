@@ -115,7 +115,7 @@ augroup END
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 map <F6> :setlocal spell! spelllang=pt<CR>
 map <F5> :set spelllang=en_us<CR>
-:imap jj <Esc>
+:imap ,, <Esc>
 vmap <C-x> : !pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 :nmap <C-i> :! pandoc % --pdf-engine=xelatex -o %:r.pdf<Enter>
@@ -137,9 +137,9 @@ nnoremap ,md :-1read $HOME/.vim/.md.md<cr>
 nnoremap ,be :-1read $HOME/.vim/.beamer.md<cr>
 nnoremap ,patat :-1read $HOME/.vim/patat.md<cr>
 nnoremap ,b :Buffers<cr>
-nnoremap ,, :b#<cr>
+" nnoremap ,, :b#<cr>
 nnoremap ,d :bd<cr>
-nnoremap <leader>s :w<cr>
+nnoremap <leader>s :w <cr>
 inoremap <leader>s <C-c>:w<cr>
 noremap <leader>q :q<cr>
 nnoremap <leader>w <C-w>w
@@ -154,8 +154,9 @@ inoremap [i ī
 inoremap [o ō
 inoremap [u ū
 
+:noremap <leader> gf :e <cfile><CR>
 
-imap <S-Right> <Esc>v<Right>
+imap <S-Right> <Esc>gh<Right>
 
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
@@ -206,6 +207,8 @@ endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
+
+set ve=block
 
 " set ve=all
 
