@@ -154,11 +154,7 @@ inoremap [i ī
 inoremap [o ō
 inoremap [u ū
 
-<<<<<<< HEAD
 :noremap <leader> gf :e <cfile><CR>
-=======
-:noremap <leader>gf :e <cfile>.md<CR>
->>>>>>> 0acbdc0bb9ddad241a6a127817ce177d0b786963
 
 imap <S-Right> <Esc>gh<Right>
 
