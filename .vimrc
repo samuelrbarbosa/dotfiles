@@ -29,6 +29,9 @@ set noerrorbells
 set novisualbell
 set hidden
 
+set notimeout
+set ttimeout
+set ttimeoutlen=10
 
 let mapleader=","
 
